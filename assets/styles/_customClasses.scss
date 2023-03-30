@@ -1,0 +1,451 @@
+/*========================================================
+  GLOBAL STYLE
+=========================================================*/
+* {
+  word-break: normal !important;
+}
+html {
+  -webkit-tap-highlight-color: transparent;
+}
+body {
+  background-color: var(--body);
+  color: var(--text-title);
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-base);
+  width: 100% !important;
+  font-family: 'Prompt', sans-serif;
+  font-weight: 400;
+  // transition: background-color 0.3s ease;
+}
+
+input,
+select,
+textarea,
+a,
+p,
+span,
+div,
+button,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+li,
+th,
+td,
+strong,
+small {
+  font-family: 'Prompt', sans-serif;
+}
+
+// ======================================================================================
+// SCROLLBAR
+// ======================================================================================
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:default,
+input:-webkit-autofill:active {
+  transition: background-color 9999s ease-in-out 0s;
+  -webkit-background-fill-color: transparent !important;
+  -webkit-box-shadow: 0 0 0 30px #5e5e5e inset !important;
+  -webkit-text-fill-color: var(--text-input) !important;
+}
+
+/* width */
+::-webkit-scrollbar {
+  // width: 0px;
+  // height: 0px;
+  display: none;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  // background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  // background: #6b6b6b;
+  background: rgba(107, 107, 107, 0.5);
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  // background: #6b6b6b;
+  background: rgba(107, 107, 107, 0.5);
+}
+
+/* width */
+.scrollbar-wrapper::-webkit-scrollbar {
+  // width: 6px;
+  // height: 6px;
+}
+
+/* Track */
+.scrollbar-wrapper::-webkit-scrollbar-track {
+  // background: #f1f1f1;
+  background: none;
+}
+
+/* Handle */
+.scrollbar-wrapper::-webkit-scrollbar-thumb {
+  // background: #6b6b6b;
+  background: rgba(107, 107, 107, 0.5);
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+.scrollbar-wrapper::-webkit-scrollbar-thumb:hover {
+  // background: #6b6b6b;
+  background: rgba(107, 107, 107, 0.5);
+}
+
+/*========================================================
+  BACKGROUND COLOR
+=========================================================*/
+.bg-success {
+  background-color: var(--success);
+}
+
+.bg-warning {
+  background-color: var(--warning);
+}
+
+.bg-danger {
+  background-color: var(--danger);
+}
+
+.bg-primary {
+  background: rgba(var(--RGB_card-primary), 0.5);
+  backdrop-filter: blur(50px);
+}
+
+.bg-secondary {
+  background: rgba(var(--RGB_card-secondary), 0.15);
+}
+
+.bg-gd-primary {
+  background: linear-gradient(93.65deg, var(--gd-primary1) 1.5%, var(--gd-primary2) 99.19%);
+}
+
+/*========================================================
+  TEXT COLOR
+=========================================================*/
+.text-title {
+  color: var(--text-title);
+}
+
+.text-subtitle {
+  color: var(--text-subtitle);
+}
+
+.text-disabled {
+  color: var(--text-disabled);
+}
+
+.text-input {
+  color: var(--text-input);
+}
+
+.text-hover {
+  color: var(--text-hover);
+}
+
+.text-link {
+  color: var(--text-link);
+}
+
+.text-invert {
+  color: var(--invert);
+}
+
+.text-success {
+  color: var(--success);
+}
+
+.text-danger {
+  color: var(--danger);
+}
+
+.text-warning {
+  color: var(--warning);
+}
+
+/*========================================================
+  BORDER RADIUS
+=========================================================*/
+.v-rounded {
+  border-radius: var(--border-radius);
+}
+
+.v-rounded-t {
+  border-top-left-radius: var(--border-radius);
+  border-top-right-radius: var(--border-radius);
+}
+
+.v-rounded-tr {
+  border-top-right-radius: var(--border-radius);
+}
+
+.v-rounded-tl {
+  border-top-left-radius: var(--border-radius);
+}
+
+.v-rounded-b {
+  border-bottom-left-radius: var(--border-radius);
+  border-bottom-right-radius: var(--border-radius);
+}
+
+.v-rounded-br {
+  border-bottom-right-radius: var(--border-radius);
+}
+
+.v-rounded-bl {
+  border-bottom-left-radius: var(--border-radius);
+}
+
+/*========================================================
+  BORDER COLOR
+=========================================================*/
+.v-rounded-primary {
+  border: 1px solid var(--btn-primary);
+}
+
+.v-rounded-secondary {
+  border: 1px solid var(--border);
+}
+
+/*========================================================
+  CHECKBOX COLOR
+=========================================================*/
+
+/*========================================================
+  RADIOBUTTON COLOR
+=========================================================*/
+
+/*========================================================
+  SELECT COLOR
+=========================================================*/
+
+/*========================================================
+  CARD COLOR
+=========================================================*/
+.card-primary {
+  background-color: var(--card-primary);
+}
+
+.card-secondary {
+  background-color: var(--card-secondary);
+}
+
+.card-disabled {
+  background-color: var(--card-disabled);
+}
+
+.card-hover-primary:hover {
+  background: rgba(var(--RGB_card-secondary), 0.1);
+  cursor: pointer;
+}
+
+/*========================================================
+  MODAL COLOR
+=========================================================*/
+.modal-bg {
+  background-color: var(--modal-bg);
+  box-shadow: rgb(0 0 0 / 10%) 0px 1px 2px 0px;
+}
+
+.modal-card-primary {
+  background-color: var(--modal-card-primary);
+  // box-shadow: rgb(0 0 0 / 10%) 0px 1px 2px 0px;
+}
+
+.modal-card-secondary {
+  background-color: var(--modal-card-secondary);
+  // box-shadow: rgb(0 0 0 / 10%) 0px 1px 2px 0px;
+}
+
+.modal-card-tertiary {
+  background-color: var(--modal-card-tertiary);
+}
+
+.modal-content {
+  .modal-close {
+    position: absolute;
+
+    @media (max-width: 639.9px) {
+      right: 14px;
+      top: 14px;
+    }
+  }
+}
+
+.modal.is-active.is-full-screen {
+  .animation-content {
+    background-color: black;
+  }
+}
+
+.vfm {
+  z-index: 51 !important;
+}
+
+/*========================================================
+  NEW PAGE COLOR
+=========================================================*/
+.new-page-primary {
+  background-color: var(--new-page-primary);
+}
+
+.new-page-secondary {
+  background-color: var(--new-page-secondary);
+}
+
+/*========================================================
+  DIVIDER COLOR
+=========================================================*/
+.divider-color {
+  background-color: rgba(var(--RGB_divider), 0.2);
+}
+
+.divider-border {
+  border-color: rgba(var(--RGB_divider), 0.2);
+}
+
+
+
+/*========================================================
+  TAB COLOR
+=========================================================*/
+.b-tabs {
+  .tabs {
+    ul {
+      border-bottom-style: hidden;
+      background: unset;
+
+      li {
+        a {
+          color: var(--text-subtitle);
+          border-bottom-style: hidden;
+        }
+
+        &.is-active {
+          a {
+            border-bottom-width: 3px;
+            border-bottom-style: solid;
+            color: var(--text-title);
+            border-bottom-color: var(--btn-primary);
+          }
+        }
+      }
+    }
+
+    &.is-toggle {
+      ul {
+        background: var(--card-primary);
+        border-radius: var(--border-radius);
+
+        li {
+          &:not(.is-active) a:focus {
+            background-color: unset;
+            border-color: unset;
+          }
+
+          a {
+            border: unset;
+
+            &:hover,
+            &:active,
+            &:focus {
+              background-color: unset;
+            }
+          }
+
+          &.is-active {
+            a {
+              color: white;
+              background: var(--btn-primary);
+              border-radius: var(--border-radius);
+              border-bottom-color: transparent;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*========================================================
+  PROGRESS
+=========================================================*/
+.progress.is-smaller,
+.is-smaller.progress-wrapper.is-not-native {
+  height: 0.2rem;
+}
+
+/*========================================================
+  Icon
+=========================================================*/
+.icon-default {
+  color: var(--icon-default);
+}
+.icon-active {
+  color: var(--icon-active);
+}
+
+.base-container {
+  max-width: 1920px;
+}
+
+/*========================================================
+  content Layout
+=========================================================*/
+// sm : 1274 | md : 1596 | lg : 1920
+.content-sm {
+  max-width: 1274px;
+  margin: 0 auto;
+  @media only screen and (max-width: 1294px) {
+    padding: 0 20px;
+  }
+}
+.content-md {
+  max-width: 1596px;
+  margin: 0 auto;
+  @media only screen and (max-width: 1616px) {
+    padding: 0 20px;
+  }
+}
+.content-lg {
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0 20px;
+  @media only screen and (max-width: 1940px) {
+    padding: 0px;
+  }
+}
+
+/*========================================================
+  Swiper Pagination
+=========================================================*/
+
+.swiper-pagination {
+  @media only screen and (orientation: portrait) and (max-width: 479px) {
+    bottom: 0 !important;
+  }
+}
+.swiper-pagination-bullet {
+  width: 41px !important;
+  border-radius: 160px !important;
+  background: rgba(255, 255, 255, 0.3) !important;
+  @media only screen and (orientation: portrait) and (max-width: 479px) {
+    width: 21px !important;
+  }
+}
+.swiper-pagination-bullet-active {
+  background: linear-gradient(93.65deg, var(--btn-primary1) 1.5%, var(--btn-primary2) 99.19%) !important;
+}

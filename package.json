@@ -1,0 +1,37 @@
+{
+  "name": "event-ticket",
+  "description": "platform for buy/selling ticket",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "deploy": "nuxt generate && firebase deploy",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "devDependencies": {
+    "@nuxt/image-edge": "1.0.0-27840416.dc1ed65",
+    "@nuxtjs/i18n": "8.0.0-beta.8",
+    "@vueuse/core": "^9.11.1",
+    "@vueuse/nuxt": "^9.13.0",
+    "eslint": "^8.32.0",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-nuxt": "^4.0.0",
+    "nuxt": "^3.0.0",
+    "nuxt-windicss": "^2.6.0",
+    "prettier": "^2.8.3",
+    "sass": "^1.57.1",
+    "sass-loader": "^13.2.0"
+  },
+  "dependencies": {
+    "@nuxtjs/eslint-config": "^12.0.0",
+    "@pinia/nuxt": "^0.4.6",
+    "express": "^4.18.2",
+    "nuxt-icons": "^3.1.0",
+    "pinia": "^2.0.29",
+    "swiper": "^9.0.3",
+    "vue-final-modal": "^3.4.11"
+  }
+}

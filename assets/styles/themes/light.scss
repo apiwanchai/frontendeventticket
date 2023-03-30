@@ -1,0 +1,86 @@
+/*========================================================
+  LIGHT THEME
+=========================================================*/
+$light-theme: (
+  // main
+  color: #000,
+  invert: #fff,
+
+  // Text
+  text-title: #ffffff,
+  text-subtitle: #bdbdbd,
+  text-disabled: #8c8c8c,
+  text-body: #ffffff,
+  text-label: #ffffff,
+  text-input: #ffffff,
+  text-hover: #f4f4f4,
+  text-placeholder: #bdbdbd,
+  text-link: #ff9737,
+  text-hightlight: #ff9737,
+
+  // input
+  input: #ffffff,
+  input-placeholder: #bdbdbd,
+  input-password-icon: #aaa6a1,
+
+  // Body
+  body: #131313,
+
+  // Header
+  header: #000000,
+
+  // Footer
+  footer: #000000,
+  footer-copyright: #141414,
+
+  // Button
+  // primary
+  btn-primary1: #ff9737,
+  btn-primary2: #ce6403,
+  // secondary
+  btn-secondary: #ffffff,
+  btn-secondary-stroke: #ffffff,
+  // tertiary
+  btn-tertiary: #000000,
+  // quaternary
+  btn-quaternary1: #4abc22,
+  btn-quaternary2: #07a116,
+  // line
+  btn-line: #39cd00,
+  // disabled
+  btn-disabled: #7d7d7d,
+  btn-disabled-stroke: #bdbdbd,
+
+  // Hover
+  hover-primary1: #ffaf66,
+  hover-primary2: #f0913a,
+
+  // Card
+  card-primary: #2d2d2d,
+  card-secondary: #ffffff,
+  card-tertiary: #4c4c4c,
+  card-disabled: #8d8d8d,
+
+  // Modal
+  modal-bg: #4c4c4c,
+
+  // Alert
+  alert-bg: #4c4c4c,
+
+  // Popup
+  popup-hover: #ffffff,
+
+  // Dropdown
+  dropdown-primary: #ffffff,
+  dropdown-secondary: #888887,
+
+  // Checkbox
+  checkbox1: #ff9737,
+  checkbox2: #ce6403,
+  checkbox-border: #ffffff,
+
+  // Tab
+  tab-bg: #212121,
+  tab-active1: #777777,
+  tab-active2: #3e3e3e
+);

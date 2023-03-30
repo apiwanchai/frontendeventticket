@@ -1,0 +1,50 @@
+/*=========================================================================================
+  File Name: _variables.scss
+  Description: partial- SCSS varibales
+  ----------------------------------------------------------------------------------------
+  Author: Attitude
+==========================================================================================*/
+$font-size-base: 14px !default;
+$line-height-base: 1.625rem !default;
+$border-radius: 10px;
+$global-setting: (
+  font-size-base: 14px,
+  line-height-base: 1.625rem,
+  border-radius: 10px,
+);
+
+$global-colors: (
+  light: #ffffff,
+  dark: #000000,
+  success: #06c755,
+  warning: #fbab23,
+  danger: #da3945,
+);
+
+@mixin generate($setting) {
+  @each $name, $value in $setting {
+    --#{$name}: #{$value};
+  }
+}
+
+// Functions
+@function hexToRGB($hex) {
+  @return red($hex), green($hex), blue($hex);
+}
+@mixin generate_colors($colors) {
+  // Colors, RGB Colors
+  @each $color, $value in $colors {
+    @if str-slice(#{$value}, 1, 1) == '#' {
+      --#{$color}: #{$value};
+      --RGB_#{$color}: #{hexToRGB($value)};
+    } @else {
+      --#{$color}: var(--#{$value});
+      --RGB_#{$color}: var(--RGB_#{$value});
+    }
+  }
+}
+
+:root {
+  @include generate($global-setting);
+  @include generate_colors($global-colors);
+}
